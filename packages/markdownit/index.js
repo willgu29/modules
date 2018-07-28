@@ -28,8 +28,8 @@ module.exports = function nuxtMarkdownit (options) {
       config.module.rules.push({
         test: /\.md$/,
         use: [
-          'raw-loader',
-          markDownItLoader
+          'raw-loader'
+          // markDownItLoader
         ]
       })
     } else {
@@ -42,8 +42,8 @@ module.exports = function nuxtMarkdownit (options) {
           },
           {
             use: [
-              'raw-loader',
-              markDownItLoader
+              'raw-loader'
+              // markDownItLoader
             ]
           }
         ]
